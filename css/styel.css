@@ -1,147 +1,373 @@
-/*nav*/
+/* general */
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* navbar */
+
 nav{
-    background-color: rgb(30, 32, 43);
-   
+
+    background-color: rgb(30,32,43);
+
 }
+
+
 .nav-link{
-    color: white;
-    margin-right: 50px;
-}
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-  color:rgb(0, 154, 216);
-  border: solid 2px rgb(0, 154, 216);
-  border-radius: 45%;
-  padding: 10px;
-}
 
-.navbar-nav .nav-link{
-    border: solid 2px transparent;
-    border-radius: 45%;
-    transition: 0.3s;
-}
-
-.navbar-nav .nav-link:hover{
-    color: rgb(0, 154, 216);
-    border-color: rgb(0, 154, 216);
+    color:white !important;
+    margin-right:30px;
+    padding:8px 15px !important;
+    border:2px solid transparent;
+    border-radius:30px;
+    transition:.3s;
 
 }
+
+
+
+.navbar-nav .nav-link.active,
+.nav-link:hover{
+
+    color:rgb(0,154,216) !important;
+    border-color:rgb(0,154,216);
+
+}
+
+
+
 h5{
-    color: white;
-}
-span{
-    font-size: 14px;
-     color:rgb(191, 193, 200)
-}
-nav h1{
-    font-family: sans-serif;
-    font-size:16px ;
-    font-weight: 700;
-    color: white;
-}
-/*search*/
-.search{
-    background-image: url(../imges/imgi_7_banner.png);
-    background-position: center;
-    background-size: cover;
-}
-.search input{
-  margin-top: 50px;
-  background-color:  rgb(30, 32, 43);
-  margin-bottom: 50px;
-  height: 70px;
-}
-.search button{
-background-color: rgb(0, 154, 216);
-width: 5%;
-height: 54px;
-top: 17.5%;
-right: 15.5%;
-}
-/*cards*/
-.cards{
-    background-color:rgb(30, 32, 43) ;
-}
-.header{
-    background-color:  rgb(45, 48, 61);
-    color: white;
-}
-.today-card{
-    background-color: rgb(50, 53, 68);
-}
-.general-status{
-    color: rgb(0, 154, 216);
-}
-.other-details img{
-    width: 25px;
-}
-.city{
-   color:rgb(191, 193, 200);
-   font-family: sans-serif;
-   font-size: 18px;
-   font-weight: 400;
-   line-height: 18px;
-}
-.other-details span{
-    color:rgb(191, 193, 200);
-}
-.degree{
-     font-family: sans-serif;
-   font-size: 90px;
-   font-weight: 700;
-   line-height: 135px;
-}
-.other-details img{
-    width: 20px;
-}
-.details img{
-     width: 100px;
-}
-.tommorow-card{
-background-color: rgb(38, 41, 54);
-}
-.after-tommorow-card{
-     background-color: rgb(50, 53, 68);
-}
-.degree-day {
-      font-family: sans-serif;
-   font-size: 30px;
-   font-weight: 700;
-   line-height: 70px;
-}
-.degree-night{
-    color:rgb(191, 193, 200) 
-}
-/*footer*/
-footer{
-  background-color:  rgb(38, 41, 54);
-}
-.subscribe input{
-margin-top: 50px;
-background-color:  rgb(30, 32, 43);
-margin-top: 20px;
- height: 70px;
-}
-.subscribe button{
-top: 29px;
-right: 17px;
-background-color: rgb(0, 154, 216);
-width: 10%;
-height: 54px;
+
+    color:white;
+
 }
 
-.socia-icon{
-      width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color:rgb(30, 32, 43);
-    margin-right: 15px;
-    margin-top: 25px;
+
+
+.navbar-brand span{
+
+    color:rgb(191,193,200);
+
+    font-size:14px;
+
 }
-.social i {
-     color:rgb(0, 154, 202) ;
-    font-size: 25px;
+
+
+
+
+
+/* search */
+
+.search{
+
+    background-image:url("../imges/imgi_7_banner.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    padding:1px 0;
+
 }
-p{
-       font-size: 16px;
-     color:rgb(191, 193, 200)
+
+
+
+.search input{
+
+    margin:50px 0;
+
+    height:70px;
+
+    background-color:rgb(30,32,43);
+
+    color:white;
+
+}
+
+
+
+.search input::placeholder{
+
+    color:#aaa;
+
+}
+
+
+
+.search button{
+
+    background-color:rgb(0,154,216);
+
+    width:90px;
+
+    height:54px;
+
+    top:58px;
+
+    right:20px;
+
+}
+
+
+
+
+
+/* cards */
+
+.cards{
+
+    background-color:rgb(30,32,43);
+
+    padding:50px 0;
+
+}
+
+
+
+.today-card,
+.after-tommorow-card{
+
+    background-color:rgb(50,53,68);
+
+}
+
+
+
+.tommorow-card{
+
+    background-color:rgb(38,41,54);
+
+}
+
+
+
+
+
+.header{
+
+    background-color:rgb(45,48,61);
+
+    color:white;
+
+}
+
+
+
+.city{
+
+    color:rgb(191,193,200);
+
+    font-size:18px;
+
+}
+
+
+
+.degree{
+
+    color:white;
+
+    font-size:80px;
+
+}
+
+
+
+.details img{
+
+    width:100px;
+
+}
+
+
+
+.general-status{
+
+    color:rgb(0,154,216);
+
+    font-size:18px;
+
+}
+
+
+
+.other-details{
+
+    color:rgb(191,193,200);
+
+}
+
+
+
+.other-details i{
+
+    color:rgb(0,154,216);
+
+    margin-right:8px;
+
+}
+
+
+
+
+
+.degree-day{
+
+    color:white;
+
+    font-size:30px;
+
+}
+
+
+
+.degree-night{
+
+    color:rgb(191,193,200);
+
+}
+
+
+
+
+
+
+
+/* footer */
+
+
+footer{
+
+    background-color:rgb(38,41,54);
+
+}
+
+
+
+.subscribe input{
+
+    height:70px;
+
+    background-color:rgb(30,32,43);
+
+    color:white;
+
+}
+
+
+
+.subscribe button{
+
+
+    background-color:rgb(0,154,216);
+
+    height:54px;
+
+    width:120px;
+
+    top:8px;
+
+    right:15px;
+
+
+}
+
+
+
+
+.social-icon{
+
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    background-color:rgb(30,32,43);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:10px;
+
+
+}
+
+
+
+.social-icon i{
+
+    color:rgb(0,154,216);
+
+    font-size:22px;
+
+}
+
+
+
+footer p{
+
+    color:rgb(191,193,200);
+
+}
+
+
+
+
+
+
+
+/* responsive */
+
+
+@media(max-width:768px){
+
+
+.nav-link{
+
+    text-align:center;
+
+    margin:5px;
+
+}
+
+
+
+.today-card,
+.tommorow-card,
+.after-tommorow-card{
+
+    width:100%;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.degree{
+
+    font-size:60px;
+
+}
+
+
+
+.search button{
+
+    width:75px;
+
+}
+
+
 }

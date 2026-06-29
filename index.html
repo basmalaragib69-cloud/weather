@@ -1,87 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styel.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Weather</title>
+
+
+<link rel="stylesheet" href="css/all.min.css">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link rel="stylesheet" href="css/styel.css">
+
+
 </head>
+
+
 <body>
-<div class="navbar-placeholder">
-  <nav id="Nav" class="navbar navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand" href="#"><img src="icons/imgi_1_logo@2x.png" alt="Weather"></a>
-    <div><h5 class="flex-column">Weather</h5><span>tagline goes here</span></div>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active fw-bold" aria-current="page" href="#header">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">News</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="#Services">Live camers</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="#Portfolio">Photos</a>
-        </li>
-            <li class="nav-item">
-          <a class="nav-link" href="#Contact">Contact</a>
-          </li>
-    </div>
-  </div>
-  </nav>
-</div>
-<main>
-<section class="search">
-  <div class="container m-auto">
-    <input type="text" class="w-100 rounded-pill p-3 border-0 position-relative  text-white" placeholder="Enter Your Location">
-    <button class="border-0 text-white rounded-pill position-absolute">Find</button>
-  </div>
-</section>
-<section class="cards">
+
+
+<!-- Navbar -->
+
+<nav id="Nav" class="navbar navbar-expand-lg">
+
+
 <div class="container">
-  <div class="row d-lg-flex">
-    <div class="today-card col-md-4" >
-    </div>
-    <div class="tommorow-card col-md-4 text-center">
-  </div>
-  <div class="after-tommorow-card col-md-4 text-center"></div>
+
+
+<a class="navbar-brand d-flex align-items-center" href="#">
+
+
+<img src="icons/imgi_1_logo@2x.png" alt="Weather">
+
+
+
+<div class="ms-2">
+
+<h5 class="mb-0">
+Weather
+</h5>
+
+
+<span>
+tagline goes here
+</span>
+
+
 </div>
+
+
+
+</a>
+
+
+
+
+
+<button 
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarSupportedContent">
+
+
+<span class="navbar-toggler-icon"></span>
+
+
+</button>
+
+
+
+
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+
+<li class="nav-item">
+
+<a class="nav-link active" href="#">
+
+Home
+
+</a>
+
+</li>
+
+
+
+<li class="nav-item">
+
+<a class="nav-link" href="#">
+
+News
+
+</a>
+
+</li>
+
+
+
+<li class="nav-item">
+
+<a class="nav-link" href="#">
+
+Live Cameras
+
+</a>
+
+</li>
+
+
+
+<li class="nav-item">
+
+<a class="nav-link" href="#">
+
+Photos
+
+</a>
+
+</li>
+
+
+
+
+<li class="nav-item">
+
+<a class="nav-link" href="#">
+
+Contact
+
+</a>
+
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+
+</div>
+
+
+</nav>
+
+
+
+
+
+
+
+
+<!-- Search -->
+
+
+<section class="search">
+
+
+<div class="container position-relative">
+
+
+<input
+
+id="search"
+
+type="text"
+
+class="w-100 rounded-pill p-3 border-0 text-white"
+
+placeholder="Enter Your Location">
+
+
+
+
+
+<button class="border-0 text-white rounded-pill position-absolute">
+
+Find
+
+</button>
+
+
+
+</div>
+
+
 </section>
-</main>
-<footer>
-  <div class="container pt-5">
+
+
+
+
+
+
+
+
+<!-- Weather Cards -->
+
+
+<section class="cards py-5">
+
+
+<div class="container">
+
+
 <div class="row">
-  <div class="subscribe col-lg-8 d-flex position-relative">
-  <input type="text" class="w-100 rounded-pill p-3 border-0 text-white" placeholder="Enter Your Email to Subscribe">
-    <button class="border-0 text-white rounded-pill position-absolute">Subscribe</button>
-  </div>
-  <div class="social col-lg-4 py-sm-3 py-lg-0 d-flex">
-    <div class="socia-icon d-flex justify-content-center align-items-center">
-<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+
+
+<div class="today-card col-lg-4 col-md-6">
+
+
 </div>
- <div class="socia-icon d-flex justify-content-center align-items-center">
-<a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+
+
+
+
+<div class="tommorow-card col-lg-4 col-md-6 text-center">
+
+
 </div>
- <div class="socia-icon d-flex justify-content-center align-items-center">
-<a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
- </div>
-  <div class="socia-icon d-flex justify-content-center align-items-center">
-<a href="#"><i class="fa-brands fa-pinterest"></i></a>
-  </div>
-  </div>
-  <div class="col-12 py-3">
-    <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
-  </div>
+
+
+
+
+
+<div class="after-tommorow-card col-lg-4 col-md-12 text-center">
+
+
 </div>
-  </div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+
+
+<footer>
+
+
+<div class="container pt-5">
+
+
+<div class="row">
+
+
+
+
+
+<div class="subscribe col-lg-8 d-flex position-relative">
+
+
+<input
+
+type="text"
+
+class="w-100 rounded-pill p-3 border-0 text-white"
+
+placeholder="Enter Your Email to Subscribe">
+
+
+
+
+
+<button class="border-0 text-white rounded-pill position-absolute">
+
+Subscribe
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="social col-lg-4 py-3 d-flex justify-content-center">
+
+
+
+<div class="social-icon">
+
+<a href="#">
+
+<i class="fa-brands fa-facebook-f"></i>
+
+</a>
+
+</div>
+
+
+
+
+<div class="social-icon">
+
+<a href="#">
+
+<i class="fa-brands fa-twitter"></i>
+
+</a>
+
+</div>
+
+
+
+
+<div class="social-icon">
+
+<a href="#">
+
+<i class="fa-brands fa-google-plus-g"></i>
+
+</a>
+
+</div>
+
+
+
+
+<div class="social-icon">
+
+<a href="#">
+
+<i class="fa-brands fa-pinterest"></i>
+
+</a>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="col-12 py-3 text-center">
+
+
+<p>
+
+Copyright 2014 Company name. Designed by Themezy. All rights reserved
+
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
 </footer>
 
 
@@ -91,8 +402,13 @@
 
 
 
+<script src="js/bootstrap.bundle.min.js"></script>
 
-   <script src="js/bootstrap.bundle.min.js"></script> 
-   <script src="js/main.js"></script>
+
+<script src="js/main.js"></script>
+
+
 </body>
+
+
 </html>
